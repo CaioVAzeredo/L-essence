@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -9,30 +11,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CardapioHome();
-  }
-}
-
-class CardapioHome extends StatefulWidget {
-  const CardapioHome({super.key});
-
-  @override
-  State<CardapioHome> createState() => _CardapioHomeState();
-}
-
-class _CardapioHomeState extends State<CardapioHome> {
-  @override
-  Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cardapio Home',
       theme: ThemeData().copyWith(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.redAccent)),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Cardápio Home"),
-          centerTitle: true,
-        ),
-      ),
+      title: 'Cardapio Home',
+      debugShowCheckedModeBanner: false,
+      home: Home(),
     );
   }
 }
