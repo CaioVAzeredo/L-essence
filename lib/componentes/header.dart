@@ -20,7 +20,7 @@ class _HeaderState extends State<Header> {
             width: 200,
             child: ClipRRect(
               child: Image.asset(
-                "assets/Lessence-CLINIC-Logo-300px.png",
+                "assets/Lessence-CLINIC-Logo-300px.jpg",
                 fit: BoxFit.cover,
               ),
             ),
@@ -28,8 +28,12 @@ class _HeaderState extends State<Header> {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
-              "Cartas de Cafés",
-              style: TextStyle(color: Color(0xFFAB9E8E), fontSize: 35, fontWeight: FontWeight.bold,),
+              "Carta de Cafés",
+              style: TextStyle(
+                color: Color(0xFFAB9E8E),
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           )
         ],

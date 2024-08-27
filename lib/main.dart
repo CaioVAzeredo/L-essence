@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData().copyWith(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.redAccent)),
-      title: 'Cardapio Home',
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.black)),
+      title: 'Carta de Cafés',
       debugShowCheckedModeBanner: false,
       home: Home(),
     );
