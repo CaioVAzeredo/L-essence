@@ -44,7 +44,7 @@ class _DetalheGeladoState extends State<DetalheGelado> {
                   children: [
                     //Nome
                     Padding(
-                      padding: const EdgeInsets.only(top: 100,left: 20,right: 20),
+                      padding: const EdgeInsets.only(top: 100),
                       child: Center(
                         child: Text(
                           widget.gelado_model.nome,
@@ -57,50 +57,53 @@ class _DetalheGeladoState extends State<DetalheGelado> {
                       ),
                     ),
                     //Conteudo
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.black.withOpacity(0.4),
-                      ),
-                      height: 400,
-                      width: 700,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 30.0),
-                            child: Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(20),
-                                  child: Container(
-                                    height: 600,
-                                    width: 320,
-                                    child: Text(
-                                      widget.gelado_model.info,
-                                      style: TextStyle(
-                                          color: Color(0xFFAB9E8E),
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 25),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 16.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.black.withOpacity(0.4),
+                        ),
+                        height: 400,
+                        width: 700,
+                        child: ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 30.0),
+                              child: Row(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(20),
+                                    child: Container(
+                                      height: 600,
+                                      width: 320,
+                                      child: Text(
+                                        widget.gelado_model.info,
+                                        style: TextStyle(
+                                            color: Color(0xFFAB9E8E),
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 25),
+                                      ),
                                     ),
-                                  ),
-                                ), //Info
-                                //Imagem
-                                Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(10),
-                                    ),
-                                    height: 400,
-                                    width: 300,
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(10),
-                                      child: Image.asset(
-                                          widget.gelado_model.imagem),
-                                    )),
-                              ],
-                            ),
-                          )
-                        ],
+                                  ), //Info
+                                  //Imagem
+                                  Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      height: 400,
+                                      width: 300,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(10),
+                                        child: Image.asset(
+                                            widget.gelado_model.imagem),
+                                      )),
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ],
